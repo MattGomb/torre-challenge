@@ -3,16 +3,19 @@
 import { useSearchContext } from "@/context/SearchContext";
 
 const Title = () => {
-  const data = useSearchContext();
-  
+  const { personData } = useSearchContext();
+
   return (
     <div className="flex flex-col py-10 items-center gap-2">
       <div className="hex">
         <div className="flex hex-background items-center align-center justify-center">
-          <img src="" alt="picture thumbnail" />
+          <img
+            src={personData.pictureThumbnail}
+            alt="picture thumbnail"
+          />
         </div>
       </div>
-      <h3 className="text-xl">Title placeholder</h3>
+      <h3 className="text-xl">{personData.name}</h3>
     </div>
   );
 };
