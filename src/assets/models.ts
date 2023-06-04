@@ -15,6 +15,11 @@ export interface IStrengths {
   hits: number;
 }
 
+export type IPersonData = {
+  name: string;
+  pictureThumbnail: string;
+}
+
 export interface BioData {
   person: {
     professionalHeadline: string;
