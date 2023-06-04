@@ -1,5 +1,5 @@
 "use client";
-import React, { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { searchContext } from "./SearchContext";
 import { IStrengths, IPersonData } from "@/assets/models";
 
